@@ -1,0 +1,48 @@
+.bio {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .content {
+        background-color: var(--color-secondary);
+        grid-column-start: 2;
+        grid-column-end: 4;
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    h4 {
+        font-size: var(--font-size-h4);
+        margin: 0;
+        @media screen and (max-width: $breakpoint-sm) {
+            font-size: 20px;
+        }
+    }
+    h3 {
+        font-size: var(--font-size-h3);
+        @media screen and (max-width: $breakpoint-sm) {
+            font-size: 26px;
+        }
+    }
+    p {
+        font-size: var(--font-size-p);
+        @media screen and (max-width: $breakpoint-sm) {
+            font-size: 14px;
+        }
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
